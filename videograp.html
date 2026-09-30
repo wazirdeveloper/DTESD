@@ -1,0 +1,126 @@
+<!-- Navigation / Menu Bar -->
+<nav class="navbar">
+    <div class="logo">DTESD Directorate Of Technical Education</div>
+
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Tours</a></li>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Video immediately after menu -->
+<section class="hero-video">
+
+    <video autoplay muted loop playsinline>
+        <source src="t.mp4" type="video/mp4">
+		
+        Your browser does not support the video tag.
+    </video>
+	
+
+    <!-- Optional text over video -->
+    <div class="video-content">
+
+        <h1>Explore Pakistan With Us</h1>
+        <p>Discover unforgettable destinations and adventures.</p>
+        <a href="#" class="btn">Explore Tours</a>
+    	
+	
+	</div>
+	
+</section>
+
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 60px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6%;
+    position: relative;
+    z-index: 10;
+	
+	 background: rgba(0, 0, 0, 0.35);
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: yellow;
+    font-weight: 500;
+}
+
+/* Video below menu */
+.hero-video {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+}
+
+.hero-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Dark overlay */
+.hero-video::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+/* Text over video */
+.video-content {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 90%;
+}
+
+.video-content h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.video-content p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #e67e22;
+    color: white;
+    padding: 14px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+</style>
