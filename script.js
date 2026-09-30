@@ -167,3 +167,26 @@ window.addEventListener("scroll", () => {
     });
 
 });
+function toggleChat() {
+    const chatBox = document.getElementById("chatBox");
+
+    if (chatBox.style.display === "block") {
+        chatBox.style.display = "none";
+    } else {
+        chatBox.style.display = "block";
+    }
+}
+
+function openWhatsApp() {
+
+    // Replace this with your WhatsApp number
+    const phoneNumber = "923XXXXXXXXX";
+
+    const message = "Hello Siachen Tours, I would like to know more about your tour packages.";
+
+    const whatsappURL =
+        "https://wa.me/" + phoneNumber +
+        "?text=" + encodeURIComponent(message);
+
+    window.open(whatsappURL, "_blank");
+}
