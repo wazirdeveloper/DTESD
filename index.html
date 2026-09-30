@@ -803,6 +803,46 @@
     <i class="fa-solid fa-arrow-up"></i>
 </button>
 
+<!-- WhatsApp Chat Widget -->
+<div class="whatsapp-widget">
+
+    <!-- Chat Button -->
+    <button class="chat-button" onclick="toggleChat()">
+        💬
+        <span>Chat with us</span>
+    </button>
+
+    <!-- Chat Box -->
+    <div class="chat-box" id="chatBox">
+
+        <div class="chat-header">
+            <div>
+                <strong>Siachen Tours</strong>
+                <small>Usually replies instantly</small>
+            </div>
+            <button onclick="toggleChat()">×</button>
+        </div>
+
+        <div class="chat-body">
+            <div class="message">
+                👋 Hello! Welcome to Siachen Tours.
+                <br><br>
+                How can we help you with your travel plans?
+            </div>
+        </div>
+
+        <div class="chat-footer">
+            <button onclick="openWhatsApp()">
+                💬 Start WhatsApp Chat
+            </button>
+        </div>
+
+    </div>
+</div>
+
+
+
+    
 
 <script src="script.js"></script>
 
