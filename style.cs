@@ -1,6 +1,144 @@
 /* =========================
    GLOBAL
 ========================= */
+/* WhatsApp Chat Widget */
+
+.whatsapp-widget {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 9999;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Chat Button */
+.chat-button {
+    border: none;
+    background: #25D366;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.chat-button:hover {
+    transform: translateY(-2px);
+}
+
+/* Chat Box */
+.chat-box {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 65px;
+    width: 330px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+}
+
+/* Header */
+.chat-header {
+    background: #25D366;
+    color: white;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-header strong {
+    display: block;
+    font-size: 16px;
+}
+
+.chat-header small {
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.chat-header button {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Chat Body */
+.chat-body {
+    padding: 20px;
+    background: #f5f5f5;
+    min-height: 150px;
+}
+
+.message {
+    background: white;
+    padding: 14px;
+    border-radius: 12px;
+    line-height: 1.5;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+/* Footer */
+.chat-footer {
+    padding: 15px;
+    background: white;
+}
+
+.chat-footer button {
+    width: 100%;
+    border: none;
+    background: #25D366;
+    color: white;
+    padding: 13px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.chat-footer button:hover {
+    background: #1ebe5d;
+}
+
+
+/* Mobile */
+@media (max-width: 500px) {
+
+    .whatsapp-widget {
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .chat-box {
+        width: calc(100vw - 30px);
+        right: 0;
+    }
+
+    .chat-button span {
+        display: none;
+    }
+
+    .chat-button {
+        width: 55px;
+        height: 55px;
+        justify-content: center;
+        padding: 0;
+        border-radius: 50%;
+        font-size: 22px;
+    }
+}
+
+
 
 * {
     margin: 0;
